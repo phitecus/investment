@@ -127,5 +127,5 @@ Then go to the next iteration (next day)
 
 Save the results in Sector Selection Result Folder.
 
-<img src="./Sector Selection Result/A Combined Subplot.png" width="450">
+<img src="./Sector Selection Result/HSCI Sector Selection.png" width="450">
 
