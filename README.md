@@ -38,3 +38,15 @@ cap.csv”, “HSCI.csv”, and “prices.csv”)
 
 “earnings growth.csv”, “market cap.csv” are represented in every quarter,
 and “prices.csv” and “HSCI.csv” are represented in every trading day.
+
+```  
+Step 1. Weighted Earnings Growth
+```  
+
+Weighted Earnings Growth
+
+= Earnings Growth / Total Earnings Growth of the sector
+
+This step will be automatically carried out in Update.py
+
+It is represented in every quarter (1985Q1 to 2018Q1)
