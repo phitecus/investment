@@ -6,6 +6,8 @@
 
 * Market Timing
 
+* Piotroski Optimization
+
 
 ## 1. Sector Selection
 
@@ -294,4 +296,5 @@ Stored in ‘Optimization_Piotroski’ folder
 
 <img src="./Optimization_Piotroski/HSCI Piotroski Optimization.png" width="450">
 
+Is it overfitting..?
 
