@@ -220,4 +220,78 @@ folder
 <img src="./Market Timing Performance/HSCI Market Timing from 2008.png" width="450">
 
 
+## 4. Piotrosky Optimization
+
+Is there better score assignment? Randoming Scores.
+
+### 1. Generate Random Variables
+
+Generate random
+integers between 0
+and 100 for each
+criteria
+
+Divide each random
+number by the total
+and multiply by 9 so
+that the sum = 9
+
+This is one iteration.
+
+### 2. Take 500 iterations and save them in ‘Optimization_Piotroski’ folder
+
+### 3. Calculate Scores
+
+When stock satisfies each
+criteria, raise the scores by the
+random variables we generated.
+
+Scores will range from 0 to 9.
+
+Repeat this procedure 500 times
+(because we have generated 500
+sets of variables)
+
+### 4. Random Scores
+
+Likewise save the scores in the folder, ‘Random Scores’
+
+There are 500 sets of scores.
+
+### 5. Random Scores after Sector Selection
+
+Inside ‘Random Scores after
+Sector Selection’ folder, we
+generate scores combined with
+sector selection.
+
+Scores whose sectors are not
+chosen will be 0
+
+### 6. Random Weights
+
+Based on the scores, we generate
+weight (similar to weight scheme 1)
+
+We first round the float numbers in to
+integer (e.g. 5.329 = 5, 7.971 = 8, etc.)
+
+Give at most 60% weight to 9 score
+stocks, but each cannot take up more
+than 4%. Give remainder weight to 8
+score stocks, but each cannot take up
+more than 3%. Giver remainder weight
+to 7% score stocks, but each cannot
+take up more than 2.5%. Give
+remainder weight to 6% score stocks,
+but smaller than weight7.
+
+### 7. Optimization_weight.py
+
+After running random_scores, run Optimization_weight.py
+
+Stored in ‘Optimization_Piotroski’ folder
+
+<img src="./Optimization_Piotroski/HSCI Piotroski Optimization.png" width="450">
+
 
