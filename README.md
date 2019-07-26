@@ -217,5 +217,7 @@ each stock and generate various graphs and
 statistics inside “Market Timing Performance”
 folder
 
+<img src="./Market Timing Performance/HSCI Market Timing from 2008.png" width="450">
+
 
 
