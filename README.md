@@ -196,6 +196,26 @@ Semiannual Return graph, and results with each weighting scheme
 
 ## 3. Market Timing
 
+### Optimization.py
+
+Generate random parameters for each HSCI stock
+with annual return and Sharpe Ratio inside
+“Optimization” folder (input: number of iteration)
+
+### market_timing.py
+
+Function that generate each signal of technical
+indicators, trading cost, cumulative return with
+given parameters according to time series for each
+stock inside “Market Timing Result” folder
+
+### Backtest_market_timing.py
+
+With the inputs of year and initial amount: choose
+the parameters that generate highest return for
+each stock and generate various graphs and
+statistics inside “Market Timing Performance”
+folder
 
 
 
