@@ -224,7 +224,7 @@ folder
 
 Is there better score assignment? Randoming Scores.
 
-### 1. Generate Random Variables
+#### 1. Generate Random Variables
 
 Generate random
 integers between 0
@@ -238,9 +238,9 @@ that the sum = 9
 
 This is one iteration.
 
-### 2. Take 500 iterations and save them in ‘Optimization_Piotroski’ folder
+#### 2. Take 500 iterations and save them in ‘Optimization_Piotroski’ folder
 
-### 3. Calculate Scores
+#### 3. Calculate Scores
 
 When stock satisfies each
 criteria, raise the scores by the
@@ -252,13 +252,13 @@ Repeat this procedure 500 times
 (because we have generated 500
 sets of variables)
 
-### 4. Random Scores
+#### 4. Random Scores
 
 Likewise save the scores in the folder, ‘Random Scores’
 
 There are 500 sets of scores.
 
-### 5. Random Scores after Sector Selection
+#### 5. Random Scores after Sector Selection
 
 Inside ‘Random Scores after
 Sector Selection’ folder, we
@@ -268,7 +268,7 @@ sector selection.
 Scores whose sectors are not
 chosen will be 0
 
-### 6. Random Weights
+#### 6. Random Weights
 
 Based on the scores, we generate
 weight (similar to weight scheme 1)
@@ -286,7 +286,7 @@ take up more than 2.5%. Give
 remainder weight to 6% score stocks,
 but smaller than weight7.
 
-### 7. Optimization_weight.py
+#### 7. Optimization_weight.py
 
 After running random_scores, run Optimization_weight.py
 
