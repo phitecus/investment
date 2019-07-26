@@ -129,3 +129,73 @@ Save the results in Sector Selection Result Folder.
 
 <img src="./Sector Selection Result/HSCI Sector Selection.png" width="450">
 
+
+## 2. Stock Selection
+
+### How to Update
+
+Update 7 csv files using Bloomberg. So far data until 2017Q4 have
+been updated, so only the data after 2017Q4 will be required.
+
+After updating from Bloomberg, copy and paste into “Stock Selection
+folder” inside “update folder” (relevant python folder)
+
+Then run “Backtest_stock_selection.py”
+
+#### 1. Update_stock_selection.py
+
+The purpose of this program is to preprocess the data downloaded
+from Bloomberg.
+
+It will import 7 current csv files, and other new 7 csv files in
+“update\Stock Selection” folder (~_Bloomberg.csv)
+
+If new csv files have more up-to-date data, this program will append
+those data into current csv files with the right format for future use.
+
+#### 2. Stock_Score.py
+
+The purpose of this python file is to output Piotroski F Score (0~9) for
+every quarter (HK: semiannually)
+
+It will import the necessary fundamental values to calculate scores
+
+The result will be saved in “Stock Picking Result” folder as ‘score
+matrix.csv’
+
+Another result with Sector screening will also be saved in “Stock
+Picking Result” folder as ‘score matrix after sector selection.csv’
+
+#### 3. weight1.py & weight2.py
+
+The purpose of these files are to simply output weights in excel files
+for each weight scheme.
+
+Each weight.py automatically runs ‘Stock_Score.py’, saves the scores
+and uses the results to assign weights to each stock for each time
+period.
+
+The corresponding results will also be saved in ‘Stock Picking Result’
+folder as ‘weight 1.csv’ and ‘weight 2.csv’
+
+#### 4. Backtest_stock_selection.py
+
+Finally, this program will automatically run all the previous programs
+
+Plus, it will draw relevant graphs and save them in “Sector Selection
+Result”
+
+Daily Cumulative Return for each weight scheme, combined graph,
+Semiannual Return graph, and results with each weighting scheme
+
+<img src="./Stock Picking Result/HSCI Semiannual Return Combined.png" width="450">
+
+<img src="./Stock Picking Result/HSCI Stock Selection Combined.png" width="450">
+
+
+
+## 3. Market Timing
+
+
+
+
