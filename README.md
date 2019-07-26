@@ -63,3 +63,69 @@ sector and rank them accordingly for each time period (every 2Q)
 The python program will create the result folder and save the
 rankings with each time period inside the folder (“Ranking based on
 Weighted Earnings Growth.csv”)
+
+#### Step 3.Ranking [1 and 0]
+
+This is for easier calculation
+
+
+#### Step 4. Back Test
+
+After choosing the sectors every 2 quarter, we allocate resources
+accordingly (I have done equal weight in this part, not based on
+market cap)
+
+Set the initial amount to 1M and sector selection = 4
+
+Then run the Back Test: it will automatically run “Update.py” and
+“Sector_Selection.py”
+
+
+#### Step 5. Preparation
+
+Automatically read the related CSV files: “Ranking [1 and 0].csv” and
+“prices.csv”
+
+It will initialize the result matrix with correct headers and zeros.
+
+Prices with no data will be also set to be zero.
+
+
+#### Step 6. Loop through time index (y direction)
+
+Read the time index and find the corresponding quarter to get the
+ranking and signal.
+
+For each time period, loop through stocks
+
+#### Step 7. Loop through stock (x direction)
+
+Calculate the percentage change of price of the stock
+
+Return = Percentage change of price * signal (signal = 1 or 0)
+
+Save the return value in the corresponding result matrix
+
+While looping through stocks, count the number of stocks to be
+invested (if signal is 1 and price is not 0)
+
+#### Step 8. Calculate daily & cumulative return
+
+After looping one entire row, calculate the daily return: sum the
+percentage change in the row and divide it by the stock count (equal
+weight)
+
+Equal weight: Daily return = Sum(return) / stock count
+
+Market cap weight: Daily return = sum(return*weight)
+
+Store the daily return in “daily_return” list.
+
+Also calculate cumulative return.
+
+Then go to the next iteration (next day)
+
+Save the results in Sector Selection Result Folder.
+
+<img src="./Sector Selection Result/A Combined Subplot.png" width="450">
+
